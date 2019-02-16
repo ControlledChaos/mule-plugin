@@ -94,9 +94,6 @@ final class Init {
 		// Post types and taxonomies.
 		require_once MULE_PATH . 'includes/post-types-taxes/class-post-type-tax.php';
 
-		// User funtionality.
-		require_once MULE_PATH . 'includes/users/class-users.php';
-
 	}
 
 }
