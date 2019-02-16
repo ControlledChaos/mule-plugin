@@ -100,6 +100,9 @@ class Admin {
 		// Enqueue the JavaScript for the admin area.
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
 
+		// Register nav menus.
+		add_action( 'after_setup_theme', [ $this, 'nav_menus' ], 11 );
+
 	}
 
 	/**
@@ -496,6 +499,23 @@ class Admin {
 
 		// Enqueue scripts for backend functionality of this plugin.
 		wp_enqueue_script( MULE_ADMIN_SLUG . '-admin', MULE_URL . 'admin/assets/js/conditionize.flexible.jquery.min.js', [ 'jquery' ], MULE_VERSION, true );
+
+	}
+
+	/**
+	 * Register nav menus
+	 *
+	 * For menus that correspond with post content handled
+	 * by this plugin, avoid errors if the theme is swiched.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function nav_menus() {
+
+		// For snippets post type pages.
+		register_nav_menus( [ 'snippets' => __( 'Snippets Menu', 'mule-theme' ) ] );
 
 	}
 
