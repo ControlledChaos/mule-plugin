@@ -74,30 +74,30 @@ class Enqueue_Frontend_Scripts {
 	public function scripts() {
 
 		// Non-vendor plugin script. Uncomment to use.
-		// wp_enqueue_script( MULE_ADMIN_SLUG, MULE_URL . 'assets/js/frontend.js', [ 'jquery' ], MULE_VERSION, true );
+		// wp_enqueue_script( MULE_ADMIN_SLUG, MULE_URL . 'frontend/assets/js/frontend.js', [ 'jquery' ], MULE_VERSION, true );
 
 		// Fancybox 3.
 		if ( get_option( 'mule_enqueue_fancybox_script' ) ) {
-			wp_enqueue_script( MULE_ADMIN_SLUG . '-fancybox', MULE_URL . 'assets/js/jquery.fancybox.min.js', [ 'jquery' ], MULE_VERSION, true );
+			wp_enqueue_script( MULE_ADMIN_SLUG . '-fancybox', MULE_URL . 'frontend/assets/js/jquery.fancybox.min.js', [ 'jquery' ], MULE_VERSION, true );
 		}
 
 		// Slick.
 		if ( get_option( 'mule_enqueue_slick' ) ) {
-			wp_enqueue_script( MULE_ADMIN_SLUG . '-slick', MULE_URL . 'assets/js/slick.min.js', [ 'jquery' ], MULE_VERSION, true );
+			wp_enqueue_script( MULE_ADMIN_SLUG . '-slick', MULE_URL . 'frontend/assets/js/slick.min.js', [ 'jquery' ], MULE_VERSION, true );
 		}
 
 		// Tabslet.
 		if ( get_option( 'mule_enqueue_tabslet' ) ) {
-			wp_enqueue_script( MULE_ADMIN_SLUG . '-tabslet', MULE_URL . 'assets/js/jquery.tabslet.min.js', [ 'jquery' ], MULE_VERSION, true );
+			wp_enqueue_script( MULE_ADMIN_SLUG . '-tabslet', MULE_URL . 'frontend/assets/js/jquery.tabslet.min.js', [ 'jquery' ], MULE_VERSION, true );
 		}
 
 		// Tooltipster.
 		if ( get_option( 'mule_enqueue_tooltipster' ) ) {
-			wp_enqueue_script( MULE_ADMIN_SLUG . '-tooltipster', MULE_URL . 'assets/js/tooltipster.bundle.min.js', [ 'jquery' ], MULE_VERSION, true );
+			wp_enqueue_script( MULE_ADMIN_SLUG . '-tooltipster', MULE_URL . 'frontend/assets/js/tooltipster.bundle.min.js', [ 'jquery' ], MULE_VERSION, true );
 		}
 
 		// FitVids.
-		wp_enqueue_script( MULE_ADMIN_SLUG . '-fitvids', MULE_URL . 'assets/js/jquery.fitvids.min.js', [ 'jquery' ], MULE_VERSION, true );
+		wp_enqueue_script( MULE_ADMIN_SLUG . '-fitvids', MULE_URL . 'frontend/assets/js/jquery.fitvids.min.js', [ 'jquery' ], MULE_VERSION, true );
 
 	}
 
