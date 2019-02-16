@@ -7,7 +7,7 @@
  * @link       http://ccdzine.com
  * @since      1.0.0
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes
  */
 

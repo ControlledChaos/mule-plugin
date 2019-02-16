@@ -10,7 +10,7 @@
  * No namespace since Beaver Builder is not namespaced and class
  * references will throw an error without a namespace reference.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Beaver
  *
  * @since      1.0.0

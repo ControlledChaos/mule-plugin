@@ -4,7 +4,7 @@
  *
  * Reset the WordPress database back to its original state.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Tools\Database_Reset
  *
  * @since      1.0.0

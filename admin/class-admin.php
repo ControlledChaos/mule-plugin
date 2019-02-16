@@ -2,7 +2,7 @@
 /**
  * Admin functiontionality and settings.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin
  *
  * @since      1.0.0

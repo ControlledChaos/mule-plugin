@@ -2,7 +2,7 @@
 /**
  * Filter post types by page template.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin
  *
  * @since      1.0.0

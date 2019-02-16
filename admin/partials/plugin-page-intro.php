@@ -7,7 +7,7 @@
  * However, I like to do things properly and I want this to serve as
  * an example of how it should be done for your project.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Partials
  *
  * @since      1.0.0

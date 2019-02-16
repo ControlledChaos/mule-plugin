@@ -2,7 +2,7 @@
 /**
  * Enqueue frontend scripts.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Frontend
  *
  * @since      1.0.0

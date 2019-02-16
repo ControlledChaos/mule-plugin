@@ -2,7 +2,7 @@
 /**
  * Content for the plugin More Information help tab.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Partials
  *
  * @since      1.0.0

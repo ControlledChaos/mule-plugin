@@ -2,7 +2,7 @@
 /**
  * Site settings page field groups.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage mule\admin
  * @since      1.0.0
  */

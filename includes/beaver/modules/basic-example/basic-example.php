@@ -5,7 +5,7 @@
  * This is an example module with only the basic
  * setup necessary to get it working.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Beaver
  *
  * @since      1.0.0

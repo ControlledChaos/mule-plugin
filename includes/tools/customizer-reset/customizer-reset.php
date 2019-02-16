@@ -2,7 +2,7 @@
 /**
  * Customizer reset tool
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Tools\Customizer_Reset
  *
  * @since      1.0.0

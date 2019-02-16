@@ -2,7 +2,7 @@
 /**
  * Open Graph meta tags.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Frontend\Meta_Tags
  *
  * @since      1.0.0

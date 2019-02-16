@@ -2,7 +2,7 @@
 /**
  * Wordpress user functionality.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Users
  *
  * @since      1.0.0

@@ -6,7 +6,7 @@
  * with WordPress/ClassicPress. Tabs are activated by targeting the `backend-tabbed-content`
  * in this plugin's admin.js file.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Partials
  *
  * @since      1.0.0

@@ -7,7 +7,7 @@
  *
  * @link       https://developers.elementor.com/creating-a-new-widget/
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Beaver
  *
  * @since      1.0.0

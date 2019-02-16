@@ -2,7 +2,7 @@
 /**
  * Define the internationalization functionality.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes
  *
  * @since      1.0.0

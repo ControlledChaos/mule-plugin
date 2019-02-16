@@ -2,7 +2,7 @@
 /**
  * Date modified meta tag.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Frontend\Meta_Tags
  *
  * @since      1.0.0

@@ -2,7 +2,7 @@
 /**
  * Example Beaver Builder module
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Beaver
  *
  * @since      1.0.0

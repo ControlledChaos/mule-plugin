@@ -2,7 +2,7 @@
 /**
  * Reset manager.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Tools\Database_Reset
  *
  * @since      1.0.0

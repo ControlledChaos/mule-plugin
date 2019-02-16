@@ -4,7 +4,7 @@
  *
  * Add icons to the titles of ACF tab and accordion fields.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin
  *
  * @since      1.0.0

@@ -2,7 +2,7 @@
 /**
  * SCallback for the Schema organization type field.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Partials\Field_Callbacks
  *
  * @since      1.0.0

@@ -2,7 +2,7 @@
 /**
  * Standard meta tags.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Frontend\Meta_Tags
  * @since      mule 1.0.0
  */

@@ -4,7 +4,7 @@
  *
  * Select a custom post type to be displayed in place of latest posts on the front page.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Post_Types_Taxes
  *
  * @since      1.0.0

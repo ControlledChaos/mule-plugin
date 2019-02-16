@@ -5,7 +5,7 @@
  * Uses the universal slug partial for admin pages. Set this
  * slug in the core plugin file.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Partials\Help
  *
  * @since      1.0.0

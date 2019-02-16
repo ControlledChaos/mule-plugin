@@ -6,7 +6,7 @@
  * The `do_action` hooks are named and placed to be similar to the
  * before and after pseudoelements in CSS.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Dashboard
  *
  * @since      1.0.0

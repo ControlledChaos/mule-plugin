@@ -3,7 +3,7 @@
 /**
  * Content for the Inline jQuery help tab.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage mule
  * @since mule 1.0.0
  */

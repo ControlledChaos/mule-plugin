@@ -2,7 +2,7 @@
 /**
  * Mule Plugin
  *
- * @package     Controlled_Chaos_Plugin
+ * @package     Mule_Plugin
  * @version     1.0.0
  * @author      Greg Sweet <greg@ccdzine.com>
  * @copyright   Copyright © 2018, Greg Sweet
@@ -11,7 +11,7 @@
  *
  * Plugin Name:  Mule Plugin
  * Plugin URI:   https://github.com/ControlledChaos/mule-plugin
- * Description:  A WordPress starter/boilerplate for site-specific plugins.
+ * Description:  Built for the Mule project (3mulesmovie.com).
  * Version:      1.0.0
  * Author:       Controlled Chaos Design
  * Author URI:   http://ccdzine.com/
@@ -55,8 +55,8 @@ if ( ! defined( 'WPINC' ) ) {
  */
 
 // First check for other classes with the same name.
-if ( ! class_exists( 'Controlled_Chaos_Plugin' ) ) :
-	final class Controlled_Chaos_Plugin {
+if ( ! class_exists( 'Mule_Plugin' ) ) :
+	final class Mule_Plugin {
 
 		/**
 		 * Instance of the class
@@ -248,11 +248,11 @@ if ( ! class_exists( 'Controlled_Chaos_Plugin' ) ) :
 	 *
 	 * @since  1.0.0
 	 * @access public
-	 * @return object Returns the instance of the `Controlled_Chaos_Plugin` class.
+	 * @return object Returns the instance of the `Mule_Plugin` class.
 	 */
 	function mule_plugin() {
 
-		return Controlled_Chaos_Plugin::instance();
+		return Mule_Plugin::instance();
 
 	}
 

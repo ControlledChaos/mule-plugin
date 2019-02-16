@@ -2,7 +2,7 @@
 /**
  * Register post types.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Includes\Post_Types_Taxes
  *
  * @since      1.0.0

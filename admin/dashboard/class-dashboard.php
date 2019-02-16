@@ -2,7 +2,7 @@
 /**
  * Dashboard functionality.
  *
- * @package    Controlled_Chaos_Plugin
+ * @package    Mule_Plugin
  * @subpackage Admin\Dashboard
  *
  * @since      1.0.0
