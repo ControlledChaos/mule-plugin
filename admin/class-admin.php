@@ -124,15 +124,11 @@ class Admin {
 			include_once MULE_PATH . 'admin/class-settings-fields-site-acf.php';
 		}
 
-		// Restore the TinyMCE editor.
-		if ( mule_acf_pro() ) {
-			$editor = get_field( 'mule_classic_editor', 'option' );
-		} else {
-			$editor = get_option( 'mule_classic_editor' );
-		}
-		if ( ( mule_classicpress() || mule_new_cms() ) && $editor ) {
-			include_once MULE_PATH . 'admin/classic-editor/classic-editor.php';
-		}
+		// Field group for the front page.
+		require_once MULE_PATH . 'admin/class-front-page-fields.php';
+
+		// Field group for the snippets post type.
+		require_once MULE_PATH . 'admin/class-snippets-fields.php';
 
 		// Functions for dasboard widgets, excluding the welcome panel.
 		require_once MULE_PATH . 'admin/dashboard/class-dashboard.php';
@@ -145,11 +141,6 @@ class Admin {
 
 		// Functions for various admin pages and edit screens.
 		require_once MULE_PATH . 'admin/class-admin-pages.php';
-
-		// Import custom fields for editing, if ACF Pro is active.
-		if ( mule_acf_options() ) {
-			include_once MULE_PATH . 'admin/class-fields-import.php';
-		}
 
 		// Filter by page template.
 		require_once MULE_PATH . 'admin/class-admin-template-filter.php';
