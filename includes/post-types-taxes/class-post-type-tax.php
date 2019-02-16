@@ -74,7 +74,7 @@ class Post_Types_Taxes {
 		require_once MULE_PATH . 'includes/post-types-taxes/class-register-post-types.php';
 
 		// Resister cutsom taxonomies.
-		require_once MULE_PATH . 'includes/post-types-taxes/class-register-taxonomies.php';
+		// require_once MULE_PATH . 'includes/post-types-taxes/class-register-taxonomies.php';
 
 		// Functions related to post types and taxonomies.
 		require_once MULE_PATH . 'includes/post-types-taxes/class-post-type-tax-functions.php';
