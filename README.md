@@ -1,2 +1,3 @@
-# mule-plugin
-Client project.
+# Mule Plugin
+
+Functionality for a client project.
