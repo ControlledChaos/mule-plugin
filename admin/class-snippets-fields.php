@@ -65,63 +65,63 @@ final class Snippets_Fields {
 	 */
 	public function settings_fields() {
 
-		if( function_exists('acf_add_local_field_group') ):
+		if ( function_exists( 'acf_add_local_field_group' ) ) :
 
-			acf_add_local_field_group(array(
-				'key' => 'group_5c6834a0ed384',
-				'title' => 'Snippets',
-				'fields' => array(
-					array(
-						'key' => 'field_5c6834eeb05d6',
-						'label' => 'Vimeo Link',
-						'name' => 'snippet_vimeo_link',
-						'type' => 'url',
-						'instructions' => 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin.',
-						'required' => 0,
+			acf_add_local_field_group( [
+				'key'    => 'group_5c6834a0ed384',
+				'title'  => 'Snippets',
+				'fields' => [
+					[
+						'key'               => 'field_5c6834eeb05d6',
+						'label'             => __( 'Vimeo Link', 'mule-pligin' ),
+						'name'              => 'snippet_vimeo_link',
+						'type'              => 'url',
+						'instructions'      => __( 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin.', 'mule-pligin' ),
+						'required'          => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
+						'wrapper'           => [
 							'width' => '',
 							'class' => '',
-							'id' => '',
-						),
-						'default_value' => '',
-						'placeholder' => '',
-					),
-					array(
-						'key' => 'field_5c68357b378bf',
-						'label' => 'Video Description',
-						'name' => 'snippet_description',
-						'type' => 'wysiwyg',
-						'instructions' => 'Enter only a description. Links to the Vimeo channel and the donation page, etc., are handled by the Snippets Menu in the menus page, accessed at left.',
-						'required' => 0,
+							'id'    => '',
+						],
+						'default_value'     => '',
+						'placeholder'       => '',
+					],
+					[
+						'key'               => 'field_5c68357b378bf',
+						'label'             => __( 'Video Description', 'mule-pligin' ),
+						'name'              => 'snippet_description',
+						'type'              => 'wysiwyg',
+						'instructions'      => __( 'Enter only a description. Links to the Vimeo channel and the donation page, etc., are handled by the Snippets Menu in the menus page, accessed at left.', 'mule-pligin' ),
+						'required'          => 0,
 						'conditional_logic' => 0,
-						'wrapper' => array(
+						'wrapper'           => [
 							'width' => '',
 							'class' => '',
-							'id' => '',
-						),
-						'default_value' => '',
-						'tabs' => 'all',
-						'toolbar' => 'full',
-						'media_upload' => 0,
-						'delay' => 0,
-					),
-				),
-				'location' => array(
-					array(
-						array(
-							'param' => 'post_type',
+							'id'    => '',
+						],
+						'default_value'     => '',
+						'tabs'              => 'all',
+						'toolbar'           => 'full',
+						'media_upload'      => 0,
+						'delay'             => 0,
+					],
+				],
+				'location' => [
+					[
+						[
+							'param'    => 'post_type',
 							'operator' => '==',
-							'value' => 'snippets',
-						),
-					),
-				),
-				'menu_order' => 0,
-				'position' => 'acf_after_title',
-				'style' => 'seamless',
-				'label_placement' => 'top',
+							'value'    => 'snippets',
+						],
+					],
+				],
+				'menu_order'            => 0,
+				'position'              => 'acf_after_title',
+				'style'                 => 'seamless',
+				'label_placement'       => 'top',
 				'instruction_placement' => 'label',
-				'hide_on_screen' => array(
+				'hide_on_screen'        => [
 					0 => 'the_content',
 					1 => 'discussion',
 					2 => 'comments',
@@ -130,10 +130,10 @@ final class Snippets_Fields {
 					5 => 'author',
 					6 => 'format',
 					7 => 'send-trackbacks',
-				),
-				'active' => true,
+				],
+				'active'      => true,
 				'description' => '',
-			));
+			 ] );
 
 		endif;
 
