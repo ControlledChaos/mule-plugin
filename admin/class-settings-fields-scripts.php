@@ -130,14 +130,6 @@ class Settings_Fields_Scripts {
 			'mule_remove_script_version'
 		);
 
-		// Minify HTML.
-		add_settings_field( 'mule_html_minify', __( 'Minify HTML', 'mule-plugin' ), [ $this, 'html_minify_callback' ], 'mule-scripts-general', 'mule-scripts-general', [ esc_html__( 'Minify HTML source code to increase load speed', 'mule-plugin' ) ] );
-
-		register_setting(
-			'mule-scripts-general',
-			'mule_html_minify'
-		);
-
 		/**
 		 * Use included vendor scripts & options.
 		 */
@@ -325,25 +317,6 @@ class Settings_Fields_Scripts {
 		$html = '<p><input type="checkbox" id="mule_remove_script_version" name="mule_remove_script_version" value="1" ' . checked( 1, $option, false ) . '/>';
 
 		$html .= '<label for="mule_remove_script_version"> '  . $args[0] . '</label></p>';
-
-		echo $html;
-
-	}
-
-	/**
-	 * Minify HTML source code.
-	 *
-	 * @since  1.0.0
-	 * @access public
-	 * @return string
-	 */
-	public function html_minify_callback( $args ) {
-
-		$option = get_option( 'mule_html_minify' );
-
-		$html = '<p><input type="checkbox" id="mule_html_minify" name="mule_html_minify" value="1" ' . checked( 1, $option, false ) . '/>';
-
-		$html .= '<label for="mule_html_minify"> '  . $args[0] . '</label></p>';
 
 		echo $html;
 

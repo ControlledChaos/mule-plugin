@@ -97,9 +97,6 @@ final class Init {
 		// User funtionality.
 		require_once MULE_PATH . 'includes/users/class-users.php';
 
-		// Dev and maintenance tools.
-		require_once MULE_PATH . 'includes/tools/class-tools.php';
-
 	}
 
 }
