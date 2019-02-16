@@ -1,0 +1,2 @@
+# mule-plugin
+Client project.
