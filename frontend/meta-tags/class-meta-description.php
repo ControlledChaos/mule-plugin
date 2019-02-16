@@ -74,7 +74,7 @@ class Meta_Description {
 	public function description() {
 
 		// Bail on 404 error pages because of non-object errors.
-		if ( is_404() ) {
+		if ( is_404() || is_singular( 'snippets' ) ) {
 			return;
 		}
 
@@ -148,15 +148,19 @@ class Meta_Description {
 		// Use the tagline for the front page.
 		if ( is_front_page() ) {
 			$description = $tagline_desc;
+
 		// Use the blog description established above for blog pages.
 		} elseif ( is_home() ) {
 			$description = $blog_desc;
+
 		// Use the search text above of the filtered text on search pages.
 		} elseif ( is_search() ) {
 			$description = $search_meta_desc;
+
 		// For post type pages check for a manual excerpt.
 		} elseif ( has_excerpt() ) {
 			$description = $manual_excerpt;
+
 		// Otherwise use the auto excerpt if no manual excerpt is found.
 		} else {
 			$description = $auto_excerpt;

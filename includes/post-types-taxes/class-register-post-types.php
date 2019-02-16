@@ -113,16 +113,10 @@ final class Post_Types_Register {
             'menu_icon'           => 'dashicons-video-alt',
             'supports'            => [
                 'title',
-                'editor',
                 'thumbnail',
                 'excerpt',
-                'trackbacks',
-                'custom-fields',
                 'comments',
-                'revisions',
-                'author',
-                'page-attributes',
-                'post-formats'
+                'page-attributes'
             ],
             'taxonomies'          => [
                 'category',

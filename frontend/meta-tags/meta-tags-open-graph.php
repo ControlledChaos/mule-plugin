@@ -26,6 +26,8 @@ if ( ! defined( 'WPINC' ) ) {
 <meta property="og:title" content="<?php esc_attr( do_action( 'mule_meta_title_tag' ) ); ?>" />
 <?php if ( is_404() ) : ?>
 <meta property="og:description" content="404 <?php esc_attr( _e( 'Not Found' ) ); ?>" />
+<?php elseif ( is_singular( 'snippets' ) ) : ?>
+<meta name="og:description" content="<?php esc_attr( _e( 'Video Snippet' ) ); ?>" />
 <?php else : ?>
 <meta property="og:description" content="<?php esc_attr( do_action( 'mule_meta_description_tag' ) ); ?>" />
 <?php endif; ?>

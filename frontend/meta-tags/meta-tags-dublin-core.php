@@ -28,6 +28,8 @@ if ( ! defined( 'WPINC' ) ) {
 <meta name="DC.Relation" content="<?php echo esc_attr( esc_url( site_url() ) ); ?>" scheme="IsPartOf" />
 <?php if ( is_404() ) : ?>
 <meta name="DC.Description" content="404 <?php esc_attr( _e( 'Not Found' ) ); ?>" />
+<?php elseif ( is_singular( 'snippets' ) ) : ?>
+<meta name="DC.Description" content="<?php esc_attr( _e( 'Video Snippet' ) ); ?>" />
 <?php else : ?>
 <meta name="DC.Description" content="<?php esc_attr( do_action( 'mule_meta_description_tag' ) ); ?>" />
 <?php endif; ?>

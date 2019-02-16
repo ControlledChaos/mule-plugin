@@ -91,6 +91,9 @@ class Post_Types_Taxes {
 		// Capability to add custom taxonomy templates.
 		require_once MULE_PATH . 'includes/post-types-taxes/class-taxonomy-templates.php';
 
+		// Post type content for fields.
+		require_once MULE_PATH . 'includes/post-types-taxes/class-custom-content.php';
+
 	}
 
 }

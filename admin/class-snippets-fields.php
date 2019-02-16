@@ -76,7 +76,7 @@ final class Snippets_Fields {
 						'label'             => __( 'Vimeo Link', 'mule-pligin' ),
 						'name'              => 'snippet_vimeo_link',
 						'type'              => 'url',
-						'instructions'      => __( 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin.', 'mule-pligin' ),
+						'instructions'      => __( 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin. Example: https://vimeo.com/288832100', 'mule-pligin' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -85,7 +85,7 @@ final class Snippets_Fields {
 							'id'    => '',
 						],
 						'default_value'     => '',
-						'placeholder'       => '',
+						'placeholder'       => 'https://vimeo.com/288832100',
 					],
 					[
 						'key'               => 'field_5c68357b378bf',
