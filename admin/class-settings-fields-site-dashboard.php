@@ -122,21 +122,6 @@ class Settings_Fields_Site_Dashboard {
 			'mule_custom_welcome'
 		);
 
-		// Hide the try Gutenberg panel.
-		add_settings_field(
-			'mule_hide_try_gutenberg',
-			__( 'Hide Try Gutenberg', 'mule-plugin' ),
-			[ Callbacks::instance(), 'hide_try_gutenberg' ],
-			'mule-site-dashboard',
-			'mule-site-dashboard',
-			[ esc_html__( 'Hide the "Try Gutenberg" panel on the Dashboard', 'mule-plugin' ) ]
-		);
-
-		register_setting(
-			'mule-site-dashboard',
-			'mule_hide_try_gutenberg'
-		);
-
 		// Hide the welcome panel.
 		add_settings_field(
 			'mule_hide_welcome',
@@ -181,6 +166,22 @@ class Settings_Fields_Site_Dashboard {
 			'mule-site-dashboard',
 			'mule_hide_wp_news'
 		);
+
+		// Hide the ClassicPress petitions widget.
+		add_settings_field(
+			'mule_hide_petitions',
+			__( 'Hide Petitions', 'mule-plugin' ),
+			[ Callbacks::instance(), 'hide_petitions' ],
+			'mule-site-dashboard',
+			'mule-site-dashboard',
+			[ esc_html__( 'Hide the ClassicPress petitions widget on the Dashboard', 'mule-plugin' ) ]
+		);
+
+		register_setting(
+			'mule-site-dashboard',
+			'mule_hide_petitions'
+		);
+
 
 		// Hide Quick Draft (QuickPress) widget.
 		add_settings_field(

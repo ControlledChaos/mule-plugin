@@ -149,7 +149,7 @@ final class Settings_Fields_ACF {
 							'id'    => '',
 						],
 						'choices'           => [
-							'gutenberg' => __( 'Try Gutenberg', 'mule-plugin' ),
+							'petitions' => __( 'ClassicPress Petitions', 'mule-plugin' ),
 							'welcome'   => __( 'Welcome', 'mule-plugin' ),
 							'news'      => __( 'WordPress News', 'mule-plugin' ),
 							'quick'     => __( 'Quick Press', 'mule-plugin' ),

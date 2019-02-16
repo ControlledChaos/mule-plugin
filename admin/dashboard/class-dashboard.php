@@ -181,15 +181,14 @@ class Dashboard {
                 remove_action( 'welcome_panel', 'wp_welcome_panel' );
             }
 
-            // Hide the try Gutenberg panel.
-            $editor = get_field( 'mule_classic_editor', 'option' );
-            if ( ( $hide && in_array( 'gutenberg', $hide ) ) || $editor ) {
-                remove_action( 'try_gutenberg_panel', 'wp_try_gutenberg_panel' );
+            // Hide the ClassicPress petitions widget.
+            if ( $hide && in_array( 'petitions', $hide ) ) {
+                unset( $wp_meta_boxes['dashboard']['normal']['core']['dashboard_petitions'] );
             }
 
             // Hide the WordPress News widget.
             if ( $hide && in_array( 'news', $hide ) ) {
-                unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+                unset( $wp_meta_boxes['dashboard']['side']['core']['dashboard_primary'] );
             }
 
             // Hide Quick Draft (QuickPress) widget.
@@ -216,8 +215,7 @@ class Dashboard {
 
             // Get options.
             $welcome    = get_option( 'mule_hide_welcome' );
-            $gutenberg  = get_option( 'mule_hide_try_gutenberg' );
-            $editor     = get_option( 'mule_classic_editor' );
+            $petitions  = get_option( 'mule_hide_petitions' );
             $wp_news    = get_option( 'mule_hide_wp_news' );
             $quickpress = get_option( 'mule_hide_quickpress' );
             $at_glance  = get_option( 'mule_hide_at_glance' );
@@ -228,19 +226,19 @@ class Dashboard {
                 remove_action( 'welcome_panel', 'wp_welcome_panel' );
             }
 
-            // Hide the try Gutenberg panel.
-            if ( $gutenberg || $editor ) {
-                remove_action( 'try_gutenberg_panel', 'wp_try_gutenberg_panel' );
+            // Hide the ClassicPress petitions widget.
+            if ( $petitions ) {
+                unset( $wp_meta_boxes['dashboard']['normal']['core']['dashboard_petitions'] );
             }
 
             // Hide the WordPress News widget.
             if ( $wp_news ) {
-                unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+                unset( $wp_meta_boxes['dashboard']['side']['core']['dashboard_primary'] );
             }
 
             // Hide Quick Draft (QuickPress) widget.
             if ( $quickpress ) {
-                unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+                unset( $wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press'] );
             }
 
             // Hide At a Glance widget.

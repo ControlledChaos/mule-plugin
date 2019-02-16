@@ -58,20 +58,20 @@ class Dashboard_Callbacks {
 	public function __construct() {}
 
 	/**
-	 * Hide try Gutenberg panel.
+	 * Hide the ClassicPress petitions widget.
 	 *
 	 * @since  1.0.0
 	 * @access public
 	 * @param  array $args Extra arguments passed into the callback function.
 	 * @return string
 	 */
-	public function hide_try_gutenberg( $args ) {
+	public function hide_petitions( $args ) {
 
-		$option = get_option( 'mule_hide_try_gutenberg' );
+		$option = get_option( 'mule_hide_petitions' );
 
-		$html = '<p><input type="checkbox" id="mule_hide_try_gutenberg" name="mule_hide_try_gutenberg" value="1" ' . checked( 1, $option, false ) . '/>';
+		$html = '<p><input type="checkbox" id="mule_hide_petitions" name="mule_hide_petitions" value="1" ' . checked( 1, $option, false ) . '/>';
 
-		$html .= '<label for="mule_hide_try_gutenberg"> '  . $args[0] . '</label></p>';
+		$html .= '<label for="mule_hide_petitions"> '  . $args[0] . '</label></p>';
 
 		echo $html;
 
