@@ -1,6 +1,6 @@
 <?php
 /**
- * Snippets post type content
+ * Snippets post type singular content
  *
  * @package    Mule_Plugin
  * @subpackage Includes\Post_Types_Taxes

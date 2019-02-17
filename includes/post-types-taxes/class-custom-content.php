@@ -60,20 +60,23 @@ class Custom_Content {
 	 */
 	public function __construct() {
 
-		// Filter the snippets post type content.
-		add_filter( 'the_content', [ $this, 'snippets_filter' ], 10, 2 );
+		// Filter the snippets post type singular content.
+		add_filter( 'the_content', [ $this, 'snippets_singular_filter' ], 10, 2 );
+
+		// Filter the snippets post type archive content.
+		add_filter( 'the_content', [ $this, 'snippets_archive_filter' ], 10, 2 );
 
 	}
 
 	/**
-	 * Filter the snippets post type content
+	 * Filter the snippets post type singular content
 	 *
 	 * @since  1.0.0
 	 * @access public
 	 * @param  string $content
 	 * @return mixed Returns the custom HTML output.
 	 */
-	public function snippets_filter( $content ) {
+	public function snippets_singular_filter( $content ) {
 
 		// Return the default content if not snippets.
 		if ( ! is_singular( 'snippets' ) ) {
@@ -83,7 +86,33 @@ class Custom_Content {
 		ob_start();
 
 		// Include the snippet content.
-		include MULE_PATH . 'includes/post-types-taxes/content/snippets.php';
+		include MULE_PATH . 'includes/post-types-taxes/content/singular-snippets.php';
+
+		$content = ob_get_contents();
+		ob_end_clean();
+		echo $content;
+
+	}
+
+	/**
+	 * Filter the snippets post type archive content
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  string $content
+	 * @return mixed Returns the custom HTML output.
+	 */
+	public function snippets_archive_filter( $content ) {
+
+		// Return the default content if not snippets.
+		if ( ! is_post_type_archive( 'snippets' ) ) {
+			return $content;
+		}
+
+		ob_start();
+
+		// Include the snippet content.
+		include MULE_PATH . 'includes/post-types-taxes/content/archive-snippets.php';
 
 		$content = ob_get_contents();
 		ob_end_clean();
