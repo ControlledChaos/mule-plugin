@@ -36,7 +36,10 @@ final class Post_Types_Register {
 	public function __construct() {
 
         // Register snippet types.
-		add_action( 'init', [ $this, 'register' ] );
+        add_action( 'init', [ $this, 'register' ] );
+
+        // Add ACF options pages.
+        $this->options_pages();
 
 	}
 
@@ -136,6 +139,25 @@ final class Post_Types_Register {
             'snippets',
             $options
         );
+
+    }
+
+    /**
+     * Add ACF options pages.
+     *
+     * @since  1.0.0
+	 * @access public
+	 * @return void
+     */
+    public function options_pages() {
+
+        if ( function_exists( 'acf_add_options_page' ) ) {
+            acf_add_options_sub_page( [
+                'page_title'  => 'Snippets Settings',
+                'menu_title'  => 'Snippets Settings',
+                'parent_slug' => 'edit.php?post_type=snippets',
+            ] );
+        }
 
     }
 

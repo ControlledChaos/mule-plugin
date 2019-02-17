@@ -38,8 +38,8 @@ $description = get_field( 'snippet_description' );
 		<iframe src="https://player.vimeo.com/video/<?php echo $vimeo; ?>?color=3c5ea2&title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 	<div class="video-snippet-project-info">
-		<p><?php _e( '"MULE: Living on the Outside" is a personal independent documentary, not a commercially financed venture commissioned by a media company. If you would like to be a part of getting the film completed, please consider making a tax-deductible donation.' ); ?></p>
+		<p><?php the_field( 'snippet_support_message', 'option' ); ?></p>
 		<h3 class="video-snippet-donate"><a href="<?php echo get_permalink( get_page_by_path( 'support' ) ) ?>"><?php _e( 'Support the Film', 'mule-plugin' ); ?></a></h3>
+		<p class="video-snippet-disclaimer"><small><?php the_field( 'snippet_disclaimer_message', 'option' ); ?></small></p>
 	</div>
-	<p class="video-snippet-disclaimer"><small><?php _e( 'NOTE: John Sears and the 3 Mules are not participating, working or in association in any fundraising, marketing or production of this movie, nor will they receive any financial benefit from the sale of this movie.  This is his decision.  It would go against his core personal values to do so.' ); ?></small></p>
 </div>

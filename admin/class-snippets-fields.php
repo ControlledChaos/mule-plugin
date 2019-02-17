@@ -67,16 +67,21 @@ final class Snippets_Fields {
 
 		if ( function_exists( 'acf_add_local_field_group' ) ) :
 
+			/**
+			 * Snippets post type
+			 *
+			 * For adding and editing singular snippets.
+			 */
 			acf_add_local_field_group( [
 				'key'    => 'group_5c6834a0ed384',
 				'title'  => 'Snippets',
 				'fields' => [
 					[
 						'key'               => 'field_5c6834eeb05d6',
-						'label'             => __( 'Vimeo Link', 'mule-pligin' ),
+						'label'             => __( 'Vimeo Link', 'mule-plugin' ),
 						'name'              => 'snippet_vimeo_link',
 						'type'              => 'url',
-						'instructions'      => __( 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin. Example: https://vimeo.com/288832100', 'mule-pligin' ),
+						'instructions'      => __( 'Enter the simple URL of the Vimeo page. Do not use the embed code, the video will be embedded by the Mule plugin. Example: https://vimeo.com/288832100', 'mule-plugin' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -89,10 +94,10 @@ final class Snippets_Fields {
 					],
 					[
 						'key'               => 'field_5c68357b378bf',
-						'label'             => __( 'Video Description', 'mule-pligin' ),
+						'label'             => __( 'Video Description', 'mule-plugin' ),
 						'name'              => 'snippet_description',
 						'type'              => 'wysiwyg',
-						'instructions'      => __( 'Enter only a description. Links to the Vimeo channel and the donation page, etc., are handled by the Snippets Menu in the menus page, accessed at left.', 'mule-pligin' ),
+						'instructions'      => __( 'Enter only a description. Links to the Vimeo channel and the donation page, etc., are handled by the Snippets Menu in the menus page, accessed at left.', 'mule-plugin' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -133,7 +138,74 @@ final class Snippets_Fields {
 				],
 				'active'      => true,
 				'description' => '',
-			 ] );
+				] );
+
+			/**
+			 * Snippets options page
+			 *
+			 * For the options page in the snippets sub menu.
+			 */
+			acf_add_local_field_group( [
+				'key'    => 'group_5c68c94b93d62',
+				'title'  => __( 'Snippets Settings', 'mule-plugin' ),
+				'fields' => [
+					[
+						'key'               => 'field_5c68cb8f2d429',
+						'label'             => __( 'Support Message', 'mule-plugin' ),
+						'name'              => 'snippet_support_message',
+						'type'              => 'textarea',
+						'instructions'      => __( 'A brief message about donating to the project. Appears below the embedded video and above the support link button.', 'mule-plugin' ),
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => [
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						],
+						'default_value'     => '',
+						'placeholder'       => __( '', 'mule-plugin' ),
+						'maxlength'         => '',
+						'rows'              => 6,
+						'new_lines'         => '',
+					],
+					[
+						'key'               => 'field_5c68cc1c10a96',
+						'label'             => __( 'Disclaimer Message', 'mule-plugin' ),
+						'name'              => 'snippet_disclaimer_message',
+						'type'              => 'textarea',
+						'instructions'      => __( 'A brief footnote about the project. Appears below the support link button.', 'mule-plugin' ),
+						'required'          => 0,
+						'conditional_logic' => 0,
+						'wrapper'           => [
+							'width' => '',
+							'class' => '',
+							'id'    => '',
+						],
+						'default_value'     => '',
+						'placeholder'       => __( '', 'mule-plugin' ),
+						'maxlength'         => '',
+						'rows'              => 6,
+						'new_lines'         => '',
+					],
+				],
+				'location' => [
+					[
+						[
+							'param'    => 'options_page',
+							'operator' => '==',
+							'value'    => 'acf-options-snippets-settings',
+						],
+					],
+				],
+				'menu_order'            => 0,
+				'position'              => 'acf_after_title',
+				'style'                 => 'seamless',
+				'label_placement'       => 'top',
+				'instruction_placement' => 'label',
+				'hide_on_screen'        => '',
+				'active'                => true,
+				'description'           => '',
+			] );
 
 		endif;
 
