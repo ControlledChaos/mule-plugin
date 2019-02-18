@@ -23,10 +23,8 @@ $get_vimeo   = get_field( 'snippet_vimeo_link' );
 $vimeo_data  = json_decode( file_get_contents( 'http://vimeo.com/api/oembed.json?url=' . $get_vimeo ) );
 
 if ( ! $vimeo_data ) {
-	$vimeo_vid = null;
 	$vimeo_img = null;
 } else {
-	$vimeo_vid = $vimeo_data->video_id;
 	$vimeo_img = $vimeo_data->thumbnail_url;
 }
 
