@@ -106,6 +106,10 @@ class Meta_Title {
 		} elseif ( is_home() ) {
 			$title = esc_html( get_the_title( get_option( 'page_for_posts' ) ) );
 
+		// For the snippets archive.
+		} elseif ( is_post_type_archive() ) {
+			$title = esc_html( __( 'Video Snippets', 'mule-plugin' ) . ' - ' . get_bloginfo( 'name' ) );
+
 		// Use custom text for author pages.
 		} elseif ( is_author() ) {
 			$title = esc_html( $author_meta );

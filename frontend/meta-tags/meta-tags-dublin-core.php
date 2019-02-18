@@ -28,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
 <meta name="DC.Relation" content="<?php echo esc_attr( esc_url( site_url() ) ); ?>" scheme="IsPartOf" />
 <?php if ( is_404() ) : ?>
 <meta name="DC.Description" content="404 <?php esc_attr( _e( 'Not Found', 'mule-plugin' ) ); ?>" />
-<?php elseif ( is_singular( 'snippets' ) ) : ?>
+<?php elseif ( is_singular( 'snippets' ) || is_post_type_archive( 'snippets' ) ) : ?>
 <meta name="DC.Description" content="<?php esc_attr( _e( 'Conceived as a video journal, these short clips are compiled from 300 hours of raw footage. No image or sound enhancement has been made, and the editing is rudimentary.', 'mule-plugin' ) ); ?>" />
 <?php else : ?>
 <meta name="DC.Description" content="<?php esc_attr( do_action( 'mule_meta_description_tag' ) ); ?>" />

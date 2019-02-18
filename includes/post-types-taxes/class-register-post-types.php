@@ -95,7 +95,7 @@ final class Post_Types_Register {
         $options = [
             'label'               => __( 'Snippets', 'mule-plugin' ),
             'labels'              => $labels,
-            'description'         => __( 'Custom post type description.', 'mule-plugin' ),
+            'description'         => __( 'Short video pieces from the filming of Mule: Living on the Outside.', 'mule-plugin' ),
             'public'              => true,
             'publicly_queryable'  => true,
             'show_ui'             => true,
