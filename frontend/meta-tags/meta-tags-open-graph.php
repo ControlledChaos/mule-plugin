@@ -25,9 +25,9 @@ if ( ! defined( 'WPINC' ) ) {
 <meta property="og:site_name" content="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" />
 <meta property="og:title" content="<?php esc_attr( do_action( 'mule_meta_title_tag' ) ); ?>" />
 <?php if ( is_404() ) : ?>
-<meta property="og:description" content="404 <?php esc_attr( _e( 'Not Found' ) ); ?>" />
+<meta property="og:description" content="404 <?php esc_attr( _e( 'Not Found', 'mule-plugin' ) ); ?>" />
 <?php elseif ( is_singular( 'snippets' ) ) : ?>
-<meta name="og:description" content="<?php esc_attr( _e( 'Video Snippet' ) ); ?>" />
+<meta name="og:description" content="<?php esc_attr( _e( 'Conceived as a video journal, these short clips are compiled from 300 hours of raw footage. No image or sound enhancement has been made, and the editing is rudimentary.', 'mule-plugin' ) ); ?>" />
 <?php else : ?>
 <meta property="og:description" content="<?php esc_attr( do_action( 'mule_meta_description_tag' ) ); ?>" />
 <?php endif; ?>
