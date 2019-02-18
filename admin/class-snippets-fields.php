@@ -173,7 +173,7 @@ final class Snippets_Fields {
 						'label'             => __( 'Support Message', 'mule-plugin' ),
 						'name'              => 'snippet_support_message',
 						'type'              => 'textarea',
-						'instructions'      => __( 'A brief message about donating to the project. Appears below the embedded video and above the support link button.', 'mule-plugin' ),
+						'instructions'      => __( 'A brief message about donating to the project. Appears below the embedded video and above the support link button. Paragraphs added automatically with space between lines.', 'mule-plugin' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
@@ -185,7 +185,7 @@ final class Snippets_Fields {
 						'placeholder'       => __( '', 'mule-plugin' ),
 						'maxlength'         => '',
 						'rows'              => 6,
-						'new_lines'         => '',
+						'new_lines'         => 'wpautop',
 					],
 					[
 						'key'               => 'field_5c68cc1c10a96',
