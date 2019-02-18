@@ -107,7 +107,7 @@ class Meta_Title {
 			$title = esc_html( get_the_title( get_option( 'page_for_posts' ) ) );
 
 		// For the snippets archive.
-		} elseif ( is_post_type_archive() ) {
+		} elseif ( is_post_type_archive( 'snippets' ) ) {
 			$title = esc_html( __( 'Video Snippets', 'mule-plugin' ) . ' - ' . get_bloginfo( 'name' ) );
 
 		// Use custom text for author pages.
