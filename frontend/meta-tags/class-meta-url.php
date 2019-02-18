@@ -119,6 +119,10 @@ class Meta_URL {
 		} elseif ( is_home() ) {
 			$url = esc_url( get_permalink( get_option( 'page_for_posts' ) ) );
 
+		// If in post type archive and on the first page.
+		} elseif ( is_post_type_archive() ) {
+			$url = esc_url( get_post_type_archive_link( get_post_type() ) );
+
 		// If in a category archive and not on the first page.
 		} elseif ( is_category() && is_paged() ) {
 			$url = esc_url( get_category_link( $id ) . $this->page() );
