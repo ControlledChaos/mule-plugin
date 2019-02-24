@@ -87,7 +87,7 @@ class Dashboard {
 	private function dependencies() {
 
         // Get the dashboard widget class.
-        require MULE_PATH . 'admin/dashboard/class-dashboard-widget.php';
+        // require MULE_PATH . 'admin/dashboard/class-dashboard-widget.php';
 
         // Get the welcome panel class.
         require MULE_PATH . 'admin/dashboard/class-welcome.php';
