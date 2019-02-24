@@ -97,7 +97,7 @@ final class Snippets_Fields {
 						'label'             => __( 'Video Description', 'mule-plugin' ),
 						'name'              => 'snippet_description',
 						'type'              => 'wysiwyg',
-						'instructions'      => __( 'Enter only a description. Links to the Vimeo channel and the donation page, etc., are handled by the Snippets Menu in the menus page, accessed at left.', 'mule-plugin' ),
+						'instructions'      => __( 'Enter only a description. Other content on the page can be edited on the Snippets Settings, accessed at left.', 'mule-plugin' ),
 						'required'          => 0,
 						'conditional_logic' => 0,
 						'wrapper'           => [
